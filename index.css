@@ -60,6 +60,8 @@ main li {
     display: inline-block;
     margin: 0; /* Ensure there's no margin causing misalignment */ 
     border: #333;
+    
+    /* this is to round the edges */
     border-radius: 10px;
 }
 
