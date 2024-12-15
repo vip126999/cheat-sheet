@@ -65,16 +65,14 @@ main li {
     border-radius: 10px;
 
     /* this is to give it shadow appearance */
-    box-shadow: 0px 4px;
+    box-shadow: 0px 4px rgb(255, 0, 149);
 }
 
 /* this makes the button look like its pressed down when pressed */
 main li:active {
-  margin-top: 24px;
+  margin-top: 5px;
   margin-bottom: 16px;
   box-shadow: 0px 0px;
-  background-color: #C0D6DF;
-  color: #ffffff;
 }
 
 .container {
