@@ -63,6 +63,9 @@ main li {
     
     /* this is to round the edges */
     border-radius: 10px;
+
+    /* this is to give it shadow appearance */
+    box-shadow: 0px 4px;
 }
 
 .container {
