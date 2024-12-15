@@ -68,6 +68,15 @@ main li {
     box-shadow: 0px 4px;
 }
 
+/* this makes the button look like its pressed down when pressed */
+main li:active {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  box-shadow: 0px 0px;
+  background-color: #C0D6DF;
+  color: #ffffff;
+}
+
 .container {
     max-width: 940px;
     margin: 0 auto;
