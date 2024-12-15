@@ -59,6 +59,8 @@ main li {
     text-transform: uppercase;
     display: inline-block;
     margin: 0; /* Ensure there's no margin causing misalignment */ 
+    border: #333;
+    border-radius: 10px;
 }
 
 .container {
@@ -80,7 +82,6 @@ main li {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    border-radius: 10px;
 }
 
 h1 {
