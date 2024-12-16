@@ -36,7 +36,7 @@ nav li {
     font-weight: 600;
     font-size: 12px;
     display: inline-block;
-    width: 160px;
+    width: 120px;
 }
 
 main {
@@ -49,6 +49,12 @@ main {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
 }
 
 .nicepic {
