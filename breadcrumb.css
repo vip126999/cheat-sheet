@@ -1,0 +1,31 @@
+.breadcrumb {
+    text-align: left;
+}
+
+.breadcrumb > li {
+    display: inline;
+    /* background-color: #ffffff; */
+    /* position: relative; */
+    top: 18px;
+    /* padding: 20px 0px; */
+  }
+/*  */
+   .breadcrumb > li a {
+    text-decoration: none; 
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    position: relative; /* allows the anchor to move relative to its original position */ 
+    top: 10px; /* move the anchor down by 4 pixels */
+    left: 10px;
+    /* padding: 20px 80px; */
+    /* height: 20px; */
+    /* width: 80px; */
+  }
+
+.breadcrumb li+li::before {
+    content: " >> ";
+    color: white;
+    position: relative; /* allows the anchor to move relative to its original position */ 
+    top: 10px; /* move the anchor down by 4 pixels */
+    left: 10px;
+}

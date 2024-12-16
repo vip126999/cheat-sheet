@@ -60,7 +60,7 @@ main {
     background-size: cover;
 }
 
-main li {
+.container li {
     background-color: #333;
     color: #fff;
     font-family: 'Raleway', sans-serif;
@@ -82,7 +82,7 @@ main li {
 }
 
 /* this makes the button look like its pressed down when pressed */
-main li:active {
+.container li:active {
   margin-top: 5px;
   margin-bottom: 16px;
   box-shadow: 0px 0px;
