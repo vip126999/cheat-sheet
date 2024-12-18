@@ -76,21 +76,26 @@ nav a {
     padding: 16px 40px;
     text-decoration: none;
     text-transform: uppercase;
-    display: inline-block;
+    display: block;
     margin: 0; /* Ensure there's no margin causing misalignment */ 
+    margin-bottom: 15px;
     border: #333;
-    
     /* this is to round the edges */
     border-radius: 10px;
-
+    position: relative; /* allows the button to move relative to its original position */ 
+    /* transition: all 0.0025s ease; smooth transition */
     /* this is to give it shadow appearance */
     box-shadow: 0px 4px rgb(255, 255, 255);
-}
+} 
 
 /* this makes the button look like its pressed down when pressed */
-.container li:active {
-  margin-top: 5px;
-  margin-bottom: 16px;
+.Tablesli:active {
+  top: 4px;
+  box-shadow: 0px 0px;
+}
+
+.styleguideli:active {
+  top: 4px;
   box-shadow: 0px 0px;
 }
 
@@ -109,7 +114,7 @@ nav a {
     padding-top: 20px; /* Adjust as needed */
 }
 
-.listitem{
+.container a{
     text-decoration: none;
     text-transform: uppercase;
     color: white;
