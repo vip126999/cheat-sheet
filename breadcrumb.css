@@ -2,6 +2,16 @@
     text-align: left;
 }
 
+.styleguidebreadcrumb {
+  position: relative;
+  top: 20px;
+}
+
+.styleguidebreadcrumb > li a {
+  color: black !important;
+  top: 0px !important;
+}
+
 .breadcrumb > li {
     display: inline;
     /* background-color: #ffffff; */
@@ -28,4 +38,10 @@
     position: relative; /* allows the anchor to move relative to its original position */ 
     top: 10px; /* move the anchor down by 4 pixels */
     left: 10px;
+}
+
+.styleguidebreadcrumb li+li::before {
+  
+  color: rgb(0, 0, 0) !important;
+  top: 0px !important; 
 }

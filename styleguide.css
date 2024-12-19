@@ -6,10 +6,12 @@
     margin: 0;
     width: 100%;
     padding: 0;
-    height: 100%;
-    overflow: hidden;
+    height: 1250px;
     justify-content: center; /* Center horizontally */
 } 
+.styleguidehtml {
+    overflow: auto;
+}
 
 .title h1 {
     color: black;
@@ -41,7 +43,7 @@
 } 
 
 /* 6th the first box */
-.sb1 {
+.sb {
     border: 2px solid #a2a2a6;
     padding-left: 7px;
     margin: 10px;
@@ -51,6 +53,19 @@
 
 /* the title inside of the first box */
 .sb1 h2 {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Rubik Bubbles';
+}
+
+.sb2 {
+    margin-bottom: 20px !important;
+}
+
+/* title heading for sb2 */
+.sb2 h2 {
     text-align: center;
     font-size: 48px;
     margin-top: 0;
@@ -163,6 +178,18 @@
     height: 100%;
     justify-content: center; /* Center horizontally */
 }
+
+/* Footer styles */
+.styleguidefooter {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Padding for top and bottom */
+    position: relative; /* Positioning */
+    width: 100%; /* Full width */
+    bottom: 0; /* Stick to the bottom */
+    z-index: 3; /* Layering */
+  }
 
 /* bubbles container */
 .bubbles {
