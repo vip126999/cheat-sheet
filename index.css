@@ -8,7 +8,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 3;
 }
 
 header a {
@@ -73,7 +73,7 @@ nav a {
     font-weight: 600;
     font-size: 18px;
     letter-spacing: 1.3px;
-    padding: 16px 40px;
+    padding: 16px 10px;
     text-decoration: none;
     text-transform: uppercase;
     display: block;
@@ -87,6 +87,12 @@ nav a {
     /* this is to give it shadow appearance */
     box-shadow: 0px 4px rgb(255, 255, 255);
 } 
+
+.container .tablesa {
+    width: 90px;  
+    height: 50px;
+    padding: 15px 90px;
+}
 
 /* this makes the button look like its pressed down when pressed */
 .Tablesli:active {
@@ -109,15 +115,17 @@ nav a {
     display: flex; 
     flex-direction: column; 
     align-items: center; 
+    /* aligns the items at the top of container along main axis (column) */
     justify-content: flex-start; 
     height: 100vh;
-    padding-top: 20px; /* Adjust as needed */
+    padding-top: 40px; /* Adjust as needed */
 }
 
 .container a{
     text-decoration: none;
     text-transform: uppercase;
     color: white;
+    padding: 15px 90px;
 }
 
 h1 {
@@ -148,7 +156,6 @@ ul {
   h3 {
     font-size: 20px;
     padding: 15px;
-    text-align: left;
     margin-left: 20px;
     letter-spacing: 0.8px;
     font-weight: normal;

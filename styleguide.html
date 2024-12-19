@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html class="styleguidehtml">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cheat Sheet</title>
         <link rel="stylesheet" type="text/css" href="index.css" />
         <link rel="stylesheet" type="text/css" href="breadcrumb.css" />
         <link rel="stylesheet" type="text/css" href="styleguide.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barriecito&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik+Bubbles&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barriecito&family=Flavors&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik+Bubbles&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
 
     <body class="styleguidebody">
+        <!-- Add the video element -->
+        <!-- <iframe id="background-video" src="https://www.youtube.com/embed/0vHWNeKBK_M?autoplay=1&mute=1&loop=1&playlist=0vHWNeKBK_M&start=10&controls=0&modestbranding=1&showinfo=0&iv_load_policy=3" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+
+        <!-- Add bubbles container -->
+        <div class="bubbles">
+            <div class="bubble"><span class="smiley">😊</span></div>
+            <div class="bubble"><span class="smiley">😊</span></div>
+            <div class="bubble"><span class="smiley">😊</span></div>
+            <div class="bubble"><span class="smiley">😊</span></div>
+            <div class="bubble"><span class="smiley">😊</span></div>
+            <div class="bubble"><span class="smiley">😊</span></div>
+            <div class="bubble"><span class="smiley">😊</span></div>
+            <div class="bubble"><span class="smiley">😊</span></div>
+            <div class="bubble"><span class="smiley">😊</span></div>
+        </div>
 
         <!-- the header at the top that will say home -->
         <header>
@@ -23,22 +45,83 @@
         <!-- will include title and nice pic -->
         <main class="styleguidemain">
             <!-- pic goes here -->
-            <div class="nicepic styleguidenicepic">
+            <div class="styleguidenicepic">
 
                 <!-- breadcrumbs -->
                 <ul class="breadcrumb">
                     <li><a href="index.html">Home</a></li>
                 </ul>
 
-                <div class="container">
+                <div class="styleguidecontainer">
                     <!-- title goes here -->
                     <div class="title">
                     <h1>Style Guide</h1>
                     </div>
+                    <!-- this is the first box -->
+                    <div class="sb1">
+                        <h2>Colors</h2>
+
+                        <!-- blue box -->
+                        <div class="colorbox bluebox">
+                            <h3>Blue</h3>
+                            <p>#2d5dcc</p>
+                        </div>
+
+                        <!-- pink box -->
+                        <div class="colorbox pinkbox">
+                            <h3>Pink</h3>
+                            <p>#d957d9</p>
+                        </div>
+
+                        <!-- mint green box -->
+                        <div class="colorbox mintgreenbox">
+                            <h3>Mint Green</h3>
+                            <p>#4fe0b0</p>
+                        </div>
+
+                        <!-- beige box -->
+                        <div class="colorbox beigebox">
+                            <h3>Beige</h3>
+                            <p>#efd9ca</p>
+                        </div>
+
+                        <h2>Animals</h2>
+
+                        <!-- cat box -->
+                        <div class="colorbox catbox">
+                            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjRmMm1rd2czemhnbnh2cDdmamdoeTdnYjliZTZ5M2xnY3VrNm04MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QzAjVL5A5FipWVrzgo/giphy.webp" alt="Cat GIF" class="cat-gif">
+                        </div>
+
+                        <!-- monkey box -->
+                        <div class="colorbox monkeybox">
+                            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZW93ejVkczdvZG9mN2xtdDk0YzFlcnlrZXRxbGxqN2M0MGtwNm1iciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/swpCsxJSgSCxq/200.webp" alt="Monkey GIF" class="monkey-gif">
+                        </div>
                     
                 </div>
             </div>
         </main>
-        
+        <script>
+            function getRandomColor() {
+                const letters = '0123456789ABCDEF';
+                let color = '#';
+                for (let i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+
+            function getRandomAngle() {
+                return Math.floor(Math.random() * 360);
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                const bubbles = document.querySelectorAll('.bubble');
+                bubbles.forEach(bubble => {
+                    bubble.style.backgroundColor = getRandomColor();
+                    const smiley = bubble.querySelector('.smiley');
+                    smiley.style.transform = `rotate(${getRandomAngle()}deg)`;
+                });
+            });
+        </script>
     </body>
 </html>

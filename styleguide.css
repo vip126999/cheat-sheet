@@ -1,5 +1,301 @@
-.title {
-    border: 1px solid black;
+/* 1st, 2nd */
+.styleguidehtml, .styleguidebody {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center; /* Center horizontally */
+} 
 
+.title h1 {
+    color: black;
+    margin-bottom: 0;
+    font-family: Flavors;
 }
 
+/* #background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    pointer-events: none;  Prevent interaction with the iframe 
+} */
+
+/* 3rd */
+.styleguidemain {
+    position: relative;
+    top: 60px;
+    left: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    z-index: 3;
+    justify-content: center; /* Center horizontally */
+} 
+
+/* 6th the first box */
+.sb1 {
+    border: 2px solid #a2a2a6;
+    padding-left: 7px;
+    margin: 10px;
+    height: 500px;
+    text-align: left;
+}
+
+/* the title inside of the first box */
+.sb1 h2 {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Rubik Bubbles';
+}
+
+/* color box */
+.colorbox {
+    width: 253.5px;
+    height: 100px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.colorbox h3 {
+    margin: 16px 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 18px;
+    text-align: center;
+}
+
+.colorbox p {
+    text-align: center;
+    padding: 0;
+}
+
+/* blue box */
+.bluebox {
+    background-color: #2d5dcc;
+}
+
+.bluebox h3, .bluebox p {
+    color: #d2a233;
+}
+
+/* pink box */
+.pinkbox {
+    background-color: #d957d9;
+}
+
+.pinkbox h3, .pinkbox p {
+    color: #57d957;
+}
+
+/* mint green box */
+.mintgreenbox {
+    background-color: #4fe0b0;
+}
+
+.mintgreenbox h3, .mintgreenbox p {
+    color: #b04f7f;
+}
+
+/* beige box */
+.beigebox {
+    background-color: #efd9ca;
+}
+
+.beigebox h3, .beigebox p {
+    color: #153635;
+}
+
+/* Cat box */
+.catbox {
+    display: inline-block;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #f0f0f000; /* Optional background color */
+}
+
+.cat-gif {
+    width: 100%; /* Ensure the image takes up the full width */
+    height: 100%; /* Ensure the image takes up the full height */
+    object-fit: contain; /* Scale the image to fit within the container */
+}
+
+/* monkey box */
+.monkeybox {
+    display: inline-block;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #f0f0f000; /* Optional background color */
+}
+.monkey-gif {
+    width: 100%; /* Ensure the image takes up the full width */
+    height: 100%; /* Ensure the image takes up the full height */
+    object-fit: contain; /* Scale the image to fit within the container */
+}
+
+/* 4th */
+.styleguidenicepic {
+    position: relative;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    justify-content: center; /* Center horizontally */
+}
+/* 5th */
+.styleguidecontainer {
+    
+    padding: 0 auto;
+    margin: 0 40px;
+    height: 100%;
+    justify-content: center; /* Center horizontally */
+}
+
+/* bubbles container */
+.bubbles {
+    /* makes it so the page stays in the same spot when scrolling */
+    position: fixed;
+    /* positions it at the top left corner of the viewport */
+    top: 0;
+    left: 0;
+    /* makes the bubbles container the full width and height of the view port */
+    width: 100%;
+    height: 100%;
+    /* hides anything that flows outside the container */
+    overflow: hidden;
+    /* puts the container behind other content */
+    z-index: 2;
+}
+
+/* bubble elements. its the default style for all the nth-childs. but can be overwritten */
+.bubble {
+    /* positions each bubble relative to the bubbles container */
+    position: absolute;
+    /* starts the bubbles off 100 px below the container */
+    bottom: -100px;
+    /* sets the size of the bubbles */
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 0, 0, 0.712);
+    /* makes them circles */
+    border-radius: 50%;
+    /* makes the bubbles rise over ten seconds infinitely with an easing effect at the start */
+    animation: rise 10s infinite ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* overwrites or adds onto a specific element out of the bubble elements */
+.bubble:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    left: 20%;
+    /* changes animation duration */
+    animation-duration: 8s;
+    /* changes animation delay */
+    animation-delay: 3s;
+}
+
+.bubble:nth-child(3) {
+    width: 30px;
+    height: 30px;
+    left: 40%;
+    animation-duration: 8s;
+    animation-delay: 8s;
+}
+
+.bubble:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    left: 60%;
+    animation-duration: 7s;
+    animation-delay: 7s;
+}
+
+.bubble:nth-child(5) {
+    width: 25px;
+    height: 25px;
+    left: 80%;
+    animation-duration: 4s;
+    animation-delay: 9s;
+}
+
+.bubble:nth-child(6) {
+    width: 20px;
+    height: 20px;
+    left: 20%;
+    /* changes animation duration */
+    animation-duration: 7s;
+    /* changes animation delay */
+    animation-delay: 3s;
+}
+
+.bubble:nth-child(7) {
+    width: 30px;
+    height: 30px;
+    left: 40%;
+    animation-duration: 8s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(8) {
+    width: 50px;
+    height: 50px;
+    left: 60%;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(9) {
+    width: 25px;
+    height: 25px;
+    left: 80%;
+    animation-duration: 6s;
+    animation-delay: 8s;
+}
+
+
+
+.smiley {
+    font-size: 5em; /* Adjust size as needed */
+    /* animation: spin 10s infinite linear;  */
+}
+
+/* this defines an animation names rise */
+@keyframes rise {
+    /* 0% represents the start of the animation */
+    0% {
+        /* the bubble is at its initial vertical position at the start */
+        transform: translateY(0);
+        opacity: 1;
+    }
+    /* 100% represents the end of the animation */
+    100% {
+        /* the bubble is at its final vertical position at the end */
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+/* this defines an animation named spin */
+/* @keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} */
